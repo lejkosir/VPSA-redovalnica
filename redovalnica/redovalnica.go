@@ -1,20 +1,20 @@
 // Package redovalnica provides basic functionality for managing student grades.
-//
+
 // The package allows adding grades to students, printing all grades, and evaluating
 // final success based on configurable parameters such as minimum number of grades
 // and valid grade range.
-//
+
 // Example usage:
-//
-//	studenti := map[string]redovalnica.Student{
-//		"63210001": {Ime: "Ana", Priimek: "Novak"},
-//		"63210002": {Ime: "Boris", Priimek: "Kralj"},
-//	}
-//
-//	redovalnica.DodajOceno(studenti, "63210001", 9)
-//	redovalnica.IzpisVsehOcen(studenti)
-//	redovalnica.IzpisiKoncniUspeh(studenti, 2, 1, 10)
-//
+
+// 	studenti := map[string]redovalnica.Student{
+// 		"63210001": {Ime: "Ana", Priimek: "Novak"},
+// 		"63210002": {Ime: "Boris", Priimek: "Kralj"},
+// 	}
+
+// 	redovalnica.DodajOceno(studenti, "63210001", 9)
+// 	redovalnica.IzpisVsehOcen(studenti)
+// 	redovalnica.IzpisiKoncniUspeh(studenti, 2, 1, 10)
+
 // The final evaluation is based on the following logic:
 //   - If the average grade is 9.0 or more: "Odličen študent!"
 //   - If the average grade is between 6.0 and 8.99: "Povprečen študent"
@@ -27,9 +27,9 @@ import "fmt"
 
 
 type Student struct {
-	ime  string
-	priimek string
-	ocene []int
+	Ime  string
+	Priimek string
+	Ocene []int
 }
 
 
